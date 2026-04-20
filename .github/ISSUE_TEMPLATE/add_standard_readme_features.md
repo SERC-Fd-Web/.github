@@ -3,6 +3,7 @@ name: "Add standard README features"
 about: "Bring this lab repo README up to the course standard"
 title: "Add standard README features"
 labels: ["documentation"]
+type: "Task"
 assignees: []
 ---
 
@@ -10,17 +11,29 @@ assignees: []
 Update this repository’s `README.md` to include the standard sections/features used across the lab exercise series.
 
 ## Acceptance Criteria (checklist)
+Head section
 - [ ] **Title + short description**: Clear repo name and 1–2 sentence description of the lab.
 - [ ] **Learning objectives**: Bullet list of what students should learn.
-- [ ] **Prerequisites**: Required tools/accounts (and versions if relevant).
-- [ ] **Getting started / Setup**: Steps to run/open the lab locally (or in browser).
-- [ ] **Instructions**: Step-by-step tasks students must complete.
-- [ ] **Deliverables / Submission**: What to turn in (links, screenshots, files, etc.).
-- [ ] **Grading rubric (if applicable)**: High-level rubric or criteria.
-- [ ] **Troubleshooting / FAQ**: Common issues + fixes.
-- [ ] **Accessibility notes (if applicable)**: Any required a11y checks or expectations.
+- [ ] (optional) **Prerequisites**: Required tools/accounts (and versions if relevant).
+
+Getting started section
+- [ ] **Getting started / Setup**: Steps to run/open the lab locally or in codespace.
+
+Exercises
+- [ ] **Instructions**: Step-by-step tasks students must complete, or links to exercise instructions
+- [ ] (optional) **Deliverables / Submission**: What to turn in (links, screenshots, files, etc.).)
+- [ ] (optional) **Grading rubric (if applicable)**: High-level rubric or criteria.
+
+General instructions
+- [ ] (optional) Quick start
+- [ ] (optional) **Troubleshooting / FAQ**: Common issues + fixes.
+- [ ] (optional)**Accessibility notes (if applicable)**: Any required a11y checks or expectations.
+
+Footer section
 - [ ] **License**: Identify license (or explicitly state course/internal usage).
-- [ ] **Credits / Attribution**: Sources, starter templates, or acknowledgements.
+- [ ] (optional) **Credits / Attribution**: Sources, starter templates, or acknowledgements.
+- [ ] AI use notice
+- [ ] Spot mistakes: link to source repo issues
 
 ## Optional Enhancements
 - [ ] **Badges** (optional): e.g., “License”, “Last updated”, etc.
