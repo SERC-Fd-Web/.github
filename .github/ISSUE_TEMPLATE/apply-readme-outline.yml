@@ -1,0 +1,127 @@
+name: Apply Standard README Outline
+description: Restructure this lab's README.md to follow the standard lab outline.
+title: "docs: apply standard README outline"
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task: Apply Standard README Outline
+
+        Rewrite or restructure `README.md` so it follows the standard lab outline below.
+        Preserve all existing technical content (exercise steps, code snippets, commands).
+        Only reorganise and fill in structure — do not invent content that does not exist.
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current README state
+      description: Brief description of what the current README looks like (optional — Copilot Workspace will read the file directly).
+      placeholder: e.g. "Has exercise steps but no Learning Objectives section or Getting Started options."
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Extra context or exceptions
+      description: Note anything that should NOT be changed, or any sections that don't apply to this lab.
+      placeholder: e.g. "This lab has no challenge exercise." or "Keep the existing Prerequisites list as-is."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Target outline
+
+        The agent should produce a README that matches the following structure.
+        Fill in placeholder text with real content from the lab; leave placeholders only where information is genuinely unknown.
+
+        ```
+        # Lab - <Title>
+
+        <Brief description and overview>
+
+        **Time**: <estimated time>
+        **Prerequisites**: <required knowledge/skills>
+
+        [skip to exercises](#exercises)
+
+        ---
+
+        ### Learning Objectives
+        - Objective 1 …
+        - Objective 2 …
+        - Objective 3 …
+
+        ---
+
+        ## Getting Started
+
+        <details>
+        <summary>Option if starting from the template repo</summary>
+        … template repo instructions …
+        </details>
+
+        ### Option 1: GitHub Codespace (Recommended)
+        1. Open your lab repository on GitHub.
+        2. Click Code → Codespaces → Create codespace on main.
+        3. Wait for the environment to start.
+        4. Verify you are at the repository root.
+        5. Follow the exercise instructions in this README.
+
+        ### Option 2: Local Setup (Clone)
+        <details>
+        <summary>Before starting, ensure you have the required tools installed.</summary>
+        - Runtime(s): …
+        - Database(s): …
+        - Other tools: …
+        - Environment variables: …
+        </details>
+
+        1. Clone your student repository.
+        2. Confirm you are at the repository root.
+        3. Open the folder in VS Code.
+        4. Follow the exercise instructions in this README.
+
+        ---
+
+        ## Exercises
+
+        1. [Exercise 1](exercise-1.md): …
+        2. [Exercise 2](exercise-2.md): …
+        …
+        ★ [Challenge Exercise](challenge-exercise.md): …
+
+        ---
+
+        ## General Tips
+        - **Tip 1**: …
+
+        ---
+
+        ## Submitting Your Work
+        <submission instructions>
+
+        ---
+
+        > **AI use notice**: …
+
+        Spot any issues? Please submit an issue or pull request.
+        ```
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist for the implementing agent
+      options:
+        - label: Top-level title and description are present and accurate
+        - label: Time and Prerequisites fields are filled (not placeholder text)
+        - label: Learning Objectives section exists with at least two objectives
+        - label: Getting Started has both Codespace and local-clone options
+        - label: All existing exercises are preserved under the Exercises section
+        - label: General Tips section is present
+        - label: Submitting Your Work section is present
+        - label: AI use notice footer is present
+        - label: No placeholder text (e.g. "[Estimated time]") remains in the final output
