@@ -7,11 +7,9 @@ body:
   - type: textarea
     id: task-description
     attributes:
-      label: Task description
+      label: Task - Apply Standard README Outline
       description: Describe the task for the implementing agent.
       value: |
-        ## Task: Apply Standard README Outline
-
         Rewrite or restructure `README.md` so it follows the standard lab outline below.
         Preserve all existing technical content (exercise steps, code snippets, commands).
         Only reorganise and fill in structure — do not invent content that does not exist.
