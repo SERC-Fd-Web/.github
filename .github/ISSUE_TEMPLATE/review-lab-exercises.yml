@@ -1,0 +1,308 @@
+name: Review Lab Exercises and Suggest Improvements
+description: Review a lab's exercises against quality criteria and propose concrete improvements.
+title: "review: lab exercises quality review"
+labels: ["review", "teaching", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Task: Review Lab Exercises and Suggest Improvements
+
+        Review this lab exercise for a Level 4 / first-year Web Technologies and Applications module.
+
+        The review should identify strengths, weaknesses, and specific improvements. Focus on whether the lab supports student learning, is clear enough for beginners, and aligns with the module and assessment requirements. Provide actionable suggestions.
+        
+        Focus the review on:
+        - adaptability to different modules
+        - alignment with common web development competencies (not module-specific outcomes)
+        - clarity and structure for first-year students
+        - level of scaffolding
+        - cognitive demand
+        - practical skill development
+        - feedback and reflection opportunities
+        - time and workload realism
+        - technical accuracy and currency
+        - engagement and context
+
+        ---
+
+        ## Review checklist
+
+        ### 1. Learning outcome alignment
+
+        Evaluate whether the lab supports these **transferable objectives**:
+
+        - Understand core web development concepts.
+        - Apply front-end technologies (HTML, CSS, JavaScript).
+        - Apply back-end or data-driven concepts where relevant.
+        - Develop and test a working solution.
+        - Follow basic industry practices (structure, validation, accessibility).
+        - Solve problems and debug issues.
+        - Reflect on work and identify improvements.
+
+        Comment on alignment and suggest improved wording if needed.
+
+        - Does the lab clearly support one or more of the generic objectives?
+        - Are objectives stated at the start of the lab?
+        - Are they written in a way that works across different modules?
+
+        ---
+
+        ### 2. Clarity and structure
+
+        Review whether the lab has:
+
+        - Clear learning objectives.
+        - Logical step-by-step instructions.
+        - Consistent headings and formatting.
+        - Beginner-friendly language.
+        - Enough explanation before tasks.
+        - No missing assumptions or unexplained setup steps.
+
+        Identify any unclear or confusing sections.
+
+        ---
+
+        ### 3. Portability and reuse
+
+        This is the key section.
+
+        Evaluate whether the lab can be reused across modules:
+
+        - Does it avoid referencing specific assignments or modules?
+        - Does it avoid overly specific scenarios that limit reuse?
+        - Can the scenario be easily swapped (e.g. blog → shop → portfolio)?
+        - Are technologies interchangeable where possible?
+        - Can it be used in different teaching orders?
+
+        Suggest how to improve portability.
+
+        ---
+
+        ### 4. Scaffolding and difficulty
+
+        Review whether the lab provides an appropriate level of support for first-year students.
+
+        Consider:
+
+        - Are early steps sufficiently guided?
+        - Are later steps more independent?
+        - Is there too much copy-and-paste code?
+        - Are students required to think, adapt, debug, or make decisions?
+        - Are hints provided where useful?
+
+        Suggest ways to improve the balance between guidance and independence.
+
+        ---
+
+        ### 5. Learning value
+
+        Check whether the lab encourages active learning rather than simple copying.
+
+        Look for opportunities where students:
+
+        - Explain what code does.
+        - Predict an outcome.
+        - Debug an issue.
+        - Test their work.
+        - Compare approaches.
+        - Small challenges or variations
+        - Opportunities to modify or extend code
+        - Reflect on decisions.
+
+        Suggest additional questions, checkpoints, or mini-activities if needed.
+
+        ---
+
+        ### 6. Practical skill development
+
+        Review whether the lab develops useful web development skills.
+
+        Consider:
+
+        - HTML structure and semantics.
+        - CSS layout and responsive design.
+        - JavaScript behaviour.
+        - Server-side logic (if applicable)
+        - Database usage (if applicable)
+        - Testing and validation
+        - Accessibility considerations
+        - Security.
+        - Version control, if relevant.
+
+        Identify any missing or underdeveloped practical skills where applicable to the lab's focus.
+
+        ---
+
+        ### 7. Assessment independence
+
+        For portability, labs should NOT depend on a specific assignment.
+
+        Check:
+
+        - Does the lab stand alone without referencing coursework?
+        - Can outputs still be used as portfolio evidence?
+        - Are students encouraged to document their work?
+
+        Suggest improvements if the lab is too tightly coupled to an assignment.
+
+        ---
+
+        ### 8. Reflection and feedback
+
+        Review whether the lab includes:
+
+        - Checkpoints for tutor feedback.
+        - Self-check questions.
+        - Reflection prompts.
+        - Troubleshooting guidance.
+        - Extension tasks.
+
+        Suggest improvements where reflection or feedback opportunities are missing.
+
+        ---
+
+        ### 9. Time and workload
+
+        Estimate how long the lab would take a typical first-year student.
+
+        Break down the estimate by section if possible.
+
+        Comment on:
+
+        - Whether the lab fits the intended session time.
+        - Whether any section is too long or too difficult.
+        - Whether setup time has been included.
+        - Whether extension tasks are clearly optional.
+
+        ---
+
+        ### 10. Technical accuracy and best practice
+
+        Check whether the technical content is correct and current.
+
+        Look for:
+
+        - Valid HTML/CSS/JS/PHP.
+        - Secure handling of data.
+        - Appropriate use of password hashing where relevant.
+        - Use of prepared statements where database queries are included.
+        - Accessibility good practice.
+        - W3C validation.
+        - Clear file/project structure.
+        - Up-to-date commands and tools.
+
+        Flag any technical risks or outdated practices.
+
+        ---
+
+        ### 11. Engagement and context
+
+        Review whether the lab feels meaningful and engaging.
+
+        Consider:
+
+        - Is there a realistic scenario?
+        - Is the task connected to something students might understand?
+        - Is the outcome visible and rewarding?
+        - Are there optional creative choices?
+        - Does the lab avoid feeling like disconnected exercises?
+
+        Suggest improvements to scenario, theme, or student motivation.
+
+  - type: input
+    id: lab-scope
+    attributes:
+      label: Lab scope
+      description: Which lab or files should be reviewed?
+      placeholder: e.g. README.md + exercise-1.md to exercise-4.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and constraints
+      description: Include audience level, course context, and anything that must not change.
+      placeholder: e.g. Intro-level students, 90-minute session, keep current tooling stack.
+    validations:
+      required: false
+
+  - type: textarea
+    id: review-instructions
+    attributes:
+      label: Review instructions
+      description: Extra instructions for the reviewer (optional).
+      placeholder: e.g. Prioritise low-effort, high-impact improvements.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Review output format
+
+        Please provide your review in this structure:
+
+        1. **Overall summary** (3-6 bullet points)
+        2. **Findings by criterion**
+           - For each criterion, include:
+             - current state (what works / what does not)
+             - impact on learners
+             - confidence level (high/medium/low)
+        3. **Prioritised improvements**
+           - `Now` (must-fix before next run)
+           - `Next` (important improvements)
+           - `Later` (nice-to-have)
+        4. **Proposed edits**
+           - Specific suggested wording, sequence, or structure changes
+           - Where possible, map each suggestion to file and section
+        5. **Open questions / assumptions**
+
+        Keep recommendations concrete and implementable.
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Review criteria checklist
+      description: Mark each criterion as in scope for this review.
+      options:
+        - label: Clarity and structure
+          required: true
+        - label: Level of scaffolding
+          required: true
+        - label: Cognitive demand
+          required: true
+        - label: Practical skill development
+          required: true
+        - label: Feedback and reflection opportunities
+          required: true
+        - label: Time and workload realism
+          required: true
+        - label: Technical accuracy and currency
+          required: true
+        - label: Engagement and context
+          required: true
+
+  - type: textarea
+    id: rubric
+    attributes:
+      label: Optional scoring rubric
+      description: If useful, score each criterion from 1-5 and justify briefly.
+      placeholder: |
+        Clarity and structure: 3/5 - ...
+        Level of scaffolding: 4/5 - ...
+        ...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: done-checklist
+    attributes:
+      label: Completion checklist for reviewer
+      options:
+        - label: I reviewed all selected exercise materials.
+        - label: I addressed each in-scope criterion.
+        - label: I provided prioritised, actionable suggestions.
+        - label: I identified at least one quick win and one higher-impact improvement.
+        - label: I noted assumptions or unknowns.
