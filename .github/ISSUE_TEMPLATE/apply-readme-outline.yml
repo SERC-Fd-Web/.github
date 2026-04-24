@@ -6,6 +6,8 @@ body:
   - type: textarea
     id: task-description
     attributes:
+      label: Task description
+      description: Describe the task for the implementing agent.
       value: |
         ## Task: Apply Standard README Outline
 
