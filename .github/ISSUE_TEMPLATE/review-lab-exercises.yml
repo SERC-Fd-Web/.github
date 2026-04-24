@@ -1,13 +1,15 @@
-name: Review Lab Exercises and Suggest Improvements
-description: Review a lab's exercises against quality criteria and propose concrete improvements.
+name: Review Lab Exercises and Suggest Improvements (agent task)
+description: Review a lab's exercises against quality criteria and propose concrete improvements. (Assign to an agent for implementation.)
 title: "review: lab exercises quality review"
 labels: ["review", "teaching", "documentation"]
+projects: ["SERC-Fd-Web/1"]
 body:
-  - type: markdown
+  - type: textarea
+    id: review-task
     attributes:
+      label: Task - Review Lab Exercises and Suggest Improvements
+      description: Describe the review task for the implementing agent.
       value: |
-        ## Task: Review Lab Exercises and Suggest Improvements
-
         Review this lab exercise for a Level 4 / first-year Web Technologies and Applications module.
 
         The review should identify strengths, weaknesses, and specific improvements. Focus on whether the lab supports student learning, is clear enough for beginners, and aligns with the module and assessment requirements. Provide actionable suggestions.
@@ -237,11 +239,12 @@ body:
     validations:
       required: false
 
-  - type: markdown
+  - type: textarea
+    id: output-format
     attributes:
+      label: Desired review output format
+      description: If you have a preferred structure for the review output, describe it here. Otherwise, the reviewer will choose an appropriate format.
       value: |
-        ## Review output format
-
         Please provide your review in this structure:
 
         1. **Overall summary** (3-6 bullet points)
