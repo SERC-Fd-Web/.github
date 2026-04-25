@@ -5,6 +5,7 @@ labels: ["review", "teaching"]
 projects: ["SERC-Fd-Web/1"]
 body:
   - type: markdown
+    id: instruction
     attributes:
       value: |
         ## Lab Review Overview
