@@ -1,0 +1,37 @@
+name: Labs - Review Overview
+description: Create a quick overview for a lab review process.
+title: "review: lab review overview"
+labels: ["review", "teaching"]
+projects: ["SERC-Fd-Web/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Lab Review Overview
+
+        Use this issue to capture a short review summary and track the sub-tasks that need to be completed.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Briefly describe what this lab review covers.
+      value: Overview of tasks needed and current status for this lab review.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: subtasks
+    attributes:
+      label: Review tasks
+      description: Which sub-tasks are part of this review? (Check all that apply. Create additional tasks as needed.)
+      options:
+        - label: Update devcontainer configuration
+        - label: Update README structure to match standard lab outline (agent task)
+          value: apply-readme-outline
+        - label: Review exercises and suggest improvements (agent task)
+          value: review-lab-exercises
+        - label: Manually review exercises
+          value: manual-review
+    validations:
+      required: false

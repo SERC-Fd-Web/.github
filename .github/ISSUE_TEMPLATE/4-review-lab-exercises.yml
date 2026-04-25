@@ -1,4 +1,4 @@
-name: Review Lab Exercises and Suggest Improvements (agent task)
+name: Labs - Review Lab Exercises and Suggest Improvements (agent task)
 description: Review a lab's exercises against quality criteria and propose concrete improvements. (Assign to an agent for implementation.)
 title: "review: lab exercises quality review"
 labels: ["review", "teaching", "documentation"]

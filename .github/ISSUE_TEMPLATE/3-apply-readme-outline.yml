@@ -1,7 +1,7 @@
-name: Apply Standard README Outline (agent task)
+name: Labs - Apply Standard README Outline (agent task)
 description: Restructure this lab's README.md to follow the standard lab outline. (Assign to an agent for implementation.)
-title: "docs: apply standard README outline"
-labels: ["documentation"]
+title: "review: apply standard README outline"
+labels: ["documentation", "review", "teaching"]
 projects: ["SERC-Fd-Web/1"]
 body:
   - type: textarea
