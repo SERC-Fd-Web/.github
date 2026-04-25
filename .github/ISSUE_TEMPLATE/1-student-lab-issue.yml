@@ -19,9 +19,9 @@ body:
       label: Issue type
       description: What type of issue are you reporting?
       options:
-        - label: Clarity issue (e.g. instructions are confusing or incomplete)
-        - label: Technical issue (e.g. code doesn't work, error messages, etc.)
-        - label: Improvement suggestion (e.g. ways to make the lab better)
+        - Clarity issue (e.g. instructions are confusing or incomplete)
+        - Technical issue (e.g. code doesn't work, error messages, etc.)
+        - Improvement suggestion (e.g. ways to make the lab better)
     validations:
       required: true
   
