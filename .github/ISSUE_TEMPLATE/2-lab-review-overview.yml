@@ -29,10 +29,7 @@ body:
       options:
         - label: Update devcontainer configuration
         - label: Update README structure to match standard lab outline (agent task)
-          value: apply-readme-outline
         - label: Review exercises and suggest improvements (agent task)
-          value: review-lab-exercises
         - label: Manually review exercises
-          value: manual-review
     validations:
       required: false
